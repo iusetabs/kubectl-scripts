@@ -20,6 +20,7 @@ _detect_binary() {
 	*) 
 		echo "Unsupported operating system: $os" 1>&2;
 	       	return 1 ;; 
+	echo "$(uname)"
 	esac unset os
 } 
 
